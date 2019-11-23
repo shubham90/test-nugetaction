@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: shubham90/gh-pkg-action@v1.2
+      uses: shubham90/gh-pkg-action@v1.3
       with:
         azure-artifacts-feed-url: 'https://dev.azure.com/codesharing-su0/upackTasks'
         azure-devops-org-url: 'https://dev.azure.com/codesharing-su0'
