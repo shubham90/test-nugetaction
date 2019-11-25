@@ -3,15 +3,8 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: windows-latest
-    name: A job to say hello
+    name: Install Azure Artifact Package
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: shubham90/gh-pkg-action@v1.26
-      with:
-        azure-artifacts-feed-url: 'https://dev.azure.com/codesharing-su0/upackTasks'
-        azure-devops-org-url: 'https://dev.azure.com/codesharing-su0'
-        azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
     - name: Setup Nuget.exe
       uses: warrenbuckley/Setup-Nuget@v1
     - name: Install nuget package
