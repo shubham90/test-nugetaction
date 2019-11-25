@@ -12,7 +12,8 @@ jobs:
         azure-artifacts-feed-url: 'https://dev.azure.com/codesharing-su0/upackTasks'
         azure-devops-org-url: 'https://dev.azure.com/codesharing-su0'
         azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
-
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
     - name: Install nuget package
       run: nuget install -Source "https://pkgs.dev.azure.com/codesharing-SU0/_packaging/shbhawsiTest1/nuget/v3/index.json" CloudBuild.BuildTools.Client
       shell: cmd
