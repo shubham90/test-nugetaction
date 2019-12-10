@@ -6,7 +6,7 @@ jobs:
     name: Install Azure Artifact Package
     steps:
     - name: Auth to Azure Artifacts
-      uses: johnterickson/gh-pkg-action
+      uses: johnterickson/gh-pkg-action@master
       with:
         azure-devops-org-url: 'https://dev.azure.com/codesharing-su0'
         azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
